@@ -44,7 +44,7 @@ int main(int argc, char** argv)
 {
 	if (argc <= 1)
 	{
-		bool bruteforce = false;
+		bool success = false;
 		std::string name = argv[0];
 		std::string wordlist;
 		std::string MD5Hash;
@@ -55,29 +55,40 @@ int main(int argc, char** argv)
 		std::cin >> MD5Hash;
 		while (true)
 		{
-			INFO << "Do you want to Bruteforce this Hash? [y/n]" << std::endl;
+			INFO << "Do you want to Bruteforce this Hash? [y/n]: ";
 			std::cin >> choice;
+			INFO << std::endl;
+
 			switch (choice)
 			{
 			case 'y':
-				decrypt::bruteforce(MD5Hash);
+				success = decrypt::bruteforce(MD5Hash);
 				break;
 			case 'n':
-				INFO << "Do you want to use the default Wordlist?" << std::endl;
+				INFO << "Do you want to use the default Wordlist? [y/n]: ";
 				std::cin >> choice;
-				if (choice == 'y') { decrypt::wordlist(MD5Hash, wordlist); }
+				INFO << std::endl;
+				if (choice == 'y') { success = decrypt::wordlist(MD5Hash, wordlist); }
 				else
 				{
-					INFO << "Please enter the full filename:" << std::endl;
+					INFO << "Please enter the full filename: ";
 					std::cin >> wordlist;
-					decrypt::wordlist(MD5Hash, wordlist);
+					INFO << std::endl;
+					success = decrypt::wordlist(MD5Hash, wordlist);
 				}
+				break;
+			case 'q':
+				INFO << name << "is going to quit" << std::endl;
 				break;
 			default:
 				ERROR << "Only enter \"y\" or \"n\"" << std::endl;
 				break;
 			}
 			break;
+		}
+		if(success == true)
+		{
+			INFO << "";
 		}
 	}
 	else
