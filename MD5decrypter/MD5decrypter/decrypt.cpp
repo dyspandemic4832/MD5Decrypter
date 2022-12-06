@@ -11,13 +11,21 @@ namespace decrypt
 {
 	bool bruteforce(std::string MD5Hash)
 	{
+		const int MAX_LENGTH = 128;
+
 		bool success = false;
 		std::string clearText;
-		int attempts = 0;
+		long int attempts = 0;
 
-		while (success == false)
+		while (true)
 		{
+			for (int i = 0; i < MAX_LENGTH; i++)
+			{
+				DEBUG << i << std::endl;
+			}
+			//if (md5(cleartext) == MD5Hash) { success = true; break; }
 			attempts++;
+			//break;
 		}
 
 		return success;
