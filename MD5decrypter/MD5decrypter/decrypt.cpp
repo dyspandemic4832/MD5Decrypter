@@ -11,286 +11,286 @@ char asciiList(int number)
 {
 	switch (number)
 	{
-	case 1:
+	case 0:
 		return '!';
 		break;
-	case 2:
+	case 1:
 		return '"';
 		break;
-	case 3:
+	case 2:
 		return '#';
 		break;
-	case 4:
+	case 3:
 		return '$';
 		break;
-	case 5:
+	case 4:
 		return '%';
 		break;
-	case 6:
+	case 5:
 		return '&';
 		break;
-	case 7:
+	case 6:
 		return '\'';
 		break;
-	case 8:
+	case 7:
 		return '\(';
 		break;
-	case 9:
+	case 8:
 		return '\)';
 		break;
-	case 10:
+	case 9:
 		return '*';
 		break;
-	case 11:
+	case 10:
 		return '+';
 		break;
-	case 12:
+	case 11:
 		return ',';
 		break;
-	case 13:
+	case 12:
 		return '-';
 		break;
-	case 14:
+	case 13:
 		return '.';
 		break;
-	case 15:
+	case 14:
 		return '/';
 		break;
-	case 16:
+	case 15:
 		return '0';
 		break;
-	case 17:
+	case 16:
 		return '1';
 		break;
-	case 18:
+	case 17:
 		return '2';
 		break;
-	case 19:
+	case 18:
 		return '3';
 		break;
-	case 20:
+	case 19:
 		return '4';
 		break;
-	case 21:
+	case 20:
 		return '5';
 		break;
-	case 22:
+	case 21:
 		return '6';
 		break;
-	case 23:
+	case 22:
 		return '7';
 		break;
-	case 24:
+	case 23:
 		return '8';
 		break;
-	case 25:
+	case 24:
 		return '9';
 		break;
-	case 26:
+	case 25:
 		return ':';
 		break;
-	case 27:
+	case 26:
 		return ';';
 		break;
-	case 28:
+	case 27:
 		return '<';
 		break;
-	case 29:
+	case 28:
 		return '=';
 		break;
-	case 30:
+	case 29:
 		return '>';
 		break;
-	case 31:
+	case 30:
 		return '?';
 		break;
-	case 32:
+	case 31:
 		return '@';
 		break;
-	case 33:
+	case 32:
 		return 'A';
 		break;
-	case 34:
+	case 33:
 		return 'B';
 		break;
-	case 35:
+	case 34:
 		return 'C';
 		break;
-	case 36:
+	case 35:
 		return 'D';
 		break;
-	case 37:
+	case 36:
 		return 'E';
 		break;
-	case 38:
+	case 37:
 		return 'F';
 		break;
-	case 39:
+	case 38:
 		return 'G';
 		break;
-	case 40:
+	case 39:
 		return 'H';
 		break;
-	case 41:
+	case 40:
 		return 'I';
 		break;
-	case 42:
+	case 41:
 		return 'J';
 		break;
-	case 43:
+	case 42:
 		return 'K';
 		break;
-	case 44:
+	case 43:
 		return 'L';
 		break;
-	case 45:
+	case 44:
 		return 'M';
 		break;
-	case 46:
+	case 45:
 		return 'N';
 		break;
-	case 47:
+	case 46:
 		return 'O';
 		break;
-	case 48:
+	case 47:
 		return 'P';
 		break;
-	case 49:
+	case 48:
 		return 'Q';
 		break;
-	case 50:
+	case 49:
 		return 'R';
 		break;
-	case 51:
+	case 50:
 		return 'S';
 		break;
-	case 52:
+	case 51:
 		return 'T';
 		break;
-	case 53:
+	case 52:
 		return 'U';
 		break;
-	case 54:
+	case 53:
 		return 'V';
 		break;
-	case 55:
+	case 54:
 		return 'W';
 		break;
-	case 56:
+	case 55:
 		return 'X';
 		break;
-	case 57:
+	case 56:
 		return 'Y';
 		break;
-	case 58:
+	case 57:
 		return 'Z';
 		break;
-	case 59:
+	case 58:
 		return '[';
 		break;
-	case 60:
+	case 59:
 		return '\\';
 		break;
-	case 61:
+	case 60:
 		return ']';
 		break;
-	case 62:
+	case 61:
 		return '^';
 		break;
-	case 63:
+	case 62:
 		return '_';
 		break;
-	case 64:
+	case 63:
 		return '`';
 		break;
-	case 65:
+	case 64:
 		return 'a';
 		break;
-	case 66:
+	case 65:
 		return 'b';
 		break;
-	case 67:
+	case 66:
 		return 'c';
 		break;
-	case 68:
+	case 67:
 		return 'd';
 		break;
-	case 69:
+	case 68:
 		return 'e';
 		break;
-	case 70:
+	case 69:
 		return 'f';
 		break;
-	case 71:
+	case 70:
 		return 'g';
 		break;
-	case 72:
+	case 71:
 		return 'h';
 		break;
-	case 73:
+	case 72:
 		return 'i';
 		break;
-	case 74:
+	case 73:
 		return 'j';
 		break;
-	case 75:
+	case 74:
 		return 'k';
 		break;
-	case 76:
+	case 75:
 		return 'l';
 		break;
-	case 77:
+	case 76:
 		return 'm';
 		break;
-	case 78:
+	case 77:
 		return 'n';
 		break;
-	case 79:
+	case 78:
 		return 'o';
 		break;
-	case 80:
+	case 79:
 		return 'p';
 		break;
-	case 81:
+	case 80:
 		return 'q';
 		break;
-	case 82:
+	case 81:
 		return 'r';
 		break;
-	case 83:
+	case 82:
 		return 's';
 		break;
-	case 84:
+	case 83:
 		return 't';
 		break;
-	case 85:
+	case 84:
 		return 'u';
 		break;
-	case 86:
+	case 85:
 		return 'v';
 		break;
-	case 87:
+	case 86:
 		return 'w';
 		break;
-	case 88:
+	case 87:
 		return 'x';
 		break;
-	case 89:
+	case 88:
 		return 'y';
 		break;
-	case 90:
+	case 89:
 		return 'z';
 		break;
-	case 91:
+	case 90:
 		return '{';
 		break;
-	case 92:
+	case 91:
 		return '|';
 		break;
-	case 93:
+	case 92:
 		return '}';
 		break;
-	case 94:
+	case 93:
 		return '~';
 		break;
 	default:
@@ -298,6 +298,7 @@ char asciiList(int number)
 		break;
 	}
 }
+//0 = ! | 93 = ~
 
 namespace decrypt
 {
@@ -306,66 +307,53 @@ namespace decrypt
 		const int MAX_LENGTH = 128;
 		const int ASCIITABLE_LENGTH = 93;
 
-		int currentLength = 1;
-		int newLength;
+		int currentLength;
 		int clearTextInt[MAX_LENGTH];
 
 		std::string clearText = " ";
 
-		bool newChar = false;
+		bool bnewChar = false;
 		bool success = false;
 
 		long int attempts = 0;
 
-		DEBUG << "Init" << std::endl;
-		for (int i = 0; i < MAX_LENGTH; i++)
+		for (int i = 0; i < MAX_LENGTH; i++) //overridewrite clearTextInt Array with 0
 		{
 			clearTextInt[i] = 0;
 		}
 
-		DEBUG << "Starting whileloop" << std::endl;
-
 		while (true)
 		{
-			DEBUG << "Check for new Char" << std::endl;
-			if (newChar == true)
+			currentLength = clearText.length();
+
+			if (bnewChar == true)
 			{
 				DEBUG << "New Char" << std::endl;
-				currentLength = newLength;
-				char newChar = ' ';
-				clearText += newChar;
+				clearText.push_back('!');
+				bnewChar = false;
 			}
 
-			DEBUG << "Creating cleartext for Hashing" << std::endl;
 			for (int cIndex = 0; cIndex < currentLength; cIndex++)
 			{
-				int alValue = clearTextInt[cIndex] + 1;
-				DEBUG << "alValue: " << alValue << std::endl;
+				int alValue = clearTextInt[cIndex];
 				clearText.at(cIndex) = asciiList(alValue);
 			}
 
-			DEBUG << "Checking clearTextInt Values" << std::endl;
 			for (int chkNum = 0; chkNum < currentLength; chkNum++)
 			{
 				if (clearTextInt[chkNum] == 93)
 				{
-					if (chkNum == currentLength)
-					{
-						DEBUG << "Creating new Char" << std::endl;
-						newLength = currentLength++;
-						newChar = true;
-					}
+					if (chkNum == currentLength - 1) { bnewChar = true; }
 
-					clearTextInt[chkNum] = 1;
-					clearTextInt[chkNum + 1] = clearTextInt[chkNum + 1]++;
+					clearTextInt[chkNum] = 0;
+					clearTextInt[chkNum + 1] = clearTextInt[chkNum + 1] + 1;
 				}
+				else if (chkNum == 0) { clearTextInt[0] = clearTextInt[0] + 1; }
 			}
 
-			//if (md5(clearText) == MD5Hash) { success = true; break; }
-			//DEBUG << "CleartextInt: " << clearTextInt[0] << std::endl;
-			clearTextInt[0] = clearTextInt[0] + 1;
 			attempts = attempts + 1;
-			//DEBUG << "Attempts: " << attempts << std::endl;
+			DEBUG << clearText << std::endl;
+			if (md5(clearText) == MD5Hash) { success = true; break; }
 		} //end of while
 
 		return success;
