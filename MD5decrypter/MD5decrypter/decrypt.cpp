@@ -294,7 +294,7 @@ char asciiList(int number)
 		return '~';
 		break;
 	default:
-		ERROR << "Wrong Value inserted in asciiList" << std::endl;
+		ERROR << "Wrong Value inserted in asciiList. Value: " << number << std::endl;
 		break;
 	}
 }
@@ -304,6 +304,9 @@ namespace decrypt
 {
 	bool bruteforce(std::string MD5Hash)
 	{
+		INFO << "Bruteforcing is something that takes A LOT of time" << std::endl;
+		INFO << "So be crab something to drink a wait" << std::endl;
+
 		const int MAX_LENGTH = 128;
 		const int ASCIITABLE_LENGTH = 93;
 
@@ -315,9 +318,9 @@ namespace decrypt
 		bool bnewChar = false;
 		bool success = false;
 
-		long int attempts = 0;
+		//long int attempts = 0;
 
-		for (int i = 0; i < MAX_LENGTH; i++) //overridewrite clearTextInt Array with 0
+		for (int i = 0; i < MAX_LENGTH; i++)
 		{
 			clearTextInt[i] = 0;
 		}
@@ -328,7 +331,6 @@ namespace decrypt
 
 			if (bnewChar == true)
 			{
-				DEBUG << "New Char" << std::endl;
 				clearText.push_back('!');
 				bnewChar = false;
 			}
@@ -339,21 +341,32 @@ namespace decrypt
 				clearText.at(cIndex) = asciiList(alValue);
 			}
 
-			for (int chkNum = 0; chkNum < currentLength; chkNum++)
+			for (int chkNum = 0; chkNum < currentLength + 1; chkNum++)
 			{
+				
 				if (clearTextInt[chkNum] == 93)
 				{
-					if (chkNum == currentLength - 1) { bnewChar = true; }
-
-					clearTextInt[chkNum] = 0;
+					clearTextInt[chkNum] = 0; //ctIndex[0] reset from 93 to 0
+					
+					if (chkNum == currentLength - 1) { bnewChar = true; clearTextInt[chkNum + 1] = 0; }
+					else { clearTextInt[chkNum + 1] = clearTextInt[chkNum + 1] + 1; }
 				}
-				else if (chkNum == 0) { clearTextInt[0] = clearTextInt[0] + 1; }
 			}
-
-			attempts = attempts + 1;
-			if (md5(clearText) == MD5Hash) { DEBUG << clearText << std::endl; success = true; break; }
-		} //end of while
-
+			
+			if (md5(clearText) == MD5Hash)
+			{
+				INFO << "Congratiolations the Hash was successfully bruteforced!" << std::endl;
+				INFO << "Hash: " << MD5Hash << std::endl;
+				INFO << "ClearText: " << clearText << std::endl;
+				success = true;
+				break;
+			}
+			else
+			{
+				clearTextInt[0] = clearTextInt[0] + 1;
+				//attempts = attempts + 1;
+			}
+		}
 		return success;
 	}
 
