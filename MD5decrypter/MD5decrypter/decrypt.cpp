@@ -346,14 +346,12 @@ namespace decrypt
 					if (chkNum == currentLength - 1) { bnewChar = true; }
 
 					clearTextInt[chkNum] = 0;
-					clearTextInt[chkNum + 1] = clearTextInt[chkNum + 1] + 1;
 				}
 				else if (chkNum == 0) { clearTextInt[0] = clearTextInt[0] + 1; }
 			}
 
 			attempts = attempts + 1;
-			DEBUG << clearText << std::endl;
-			if (md5(clearText) == MD5Hash) { success = true; break; }
+			if (md5(clearText) == MD5Hash) { DEBUG << clearText << std::endl; success = true; break; }
 		} //end of while
 
 		return success;
