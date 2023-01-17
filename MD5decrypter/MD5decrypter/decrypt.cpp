@@ -350,9 +350,10 @@ namespace decrypt
 					
 					if (chkNum == currentLength - 1) { bnewChar = true; clearTextInt[chkNum + 1] = 0; }
 					else { clearTextInt[chkNum + 1] = clearTextInt[chkNum + 1] + 1; }
+					
 				}
 			}
-			
+			DEBUG << clearText << std::endl;
 			if (md5(clearText) == MD5Hash)
 			{
 				INFO << "Congratiolations the Hash was successfully bruteforced!" << std::endl;
